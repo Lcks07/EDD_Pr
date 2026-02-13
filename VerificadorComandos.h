@@ -1,35 +1,34 @@
-#indef VERIFICADOR_COMANDOS_H
-#define VERIFICADOR_COMANDOS_H
+#ifndef VERIFICAR_COMANDOS_H
+#define VERIFICAR_COMANDOS_H
 
 #include <string>
 #include <vector>
 
-class VerificadorComandos{
+class VerificadorComandos {
 
-public: 
-  VerificarComandos()
+public:
+    VerificadorComandos();
+    bool procesar(const std::string& linea);
 
-  bool procesar (const std::String&linea); // procesa la liena ingresada y retorna false si el comando es salir
+private:
+    std::vector<std::string> tokenizar(const std::string& linea) const;
+    bool esNumero(const std::string& texto) const;
 
-private: 
-
-std::vector<std::string> tokenizar (const std::string&linea) const; // divide la linea en palabras 
-bool esNumero(const std::string& texto) const;// verfica que el string represente un numero valido 
-
-    // Validadores por comando
-    void validarAyuda(const std::vector<std::string>& tokens) const;
-    void validarAgregarMovimiento(const std::vector<std::string>& tokens) const;
-    void validarAgregarAnalisis(const std::vector<std::string>& tokens) const;
-    void validarAgregarElemento(const std::vector<std::string>& tokens) const;
+    bool validarAyuda(const std::vector<std::string>& tokens) const;
+    bool validarCargarComandos(const std::vector<std::string>& tokens) const;
+    bool validarCargarElementos(const std::vector<std::string>& tokens) const;
+    bool validarAgregarMovimiento(const std::vector<std::string>& tokens) const;
+    bool validarAgregarAnalisis(const std::vector<std::string>& tokens) const;
+    bool validarAgregarElemento(const std::vector<std::string>& tokens) const;
+    bool validarGuardar(const std::vector<std::string>& tokens) const;
+    bool validarSimularComandos(const std::vector<std::string>& tokens) const;
+    bool validarUbicarElementos(const std::vector<std::string>& tokens) const;
+    bool validarEnCuadrante(const std::vector<std::string>& tokens) const;
+    bool validarCrearMapa(const std::vector<std::string>& tokens) const;
+    bool validarRutaMasLarga(const std::vector<std::string>& tokens) const;
 };
 
 #endif
-
-
-
-
-
-
 }
 
 
