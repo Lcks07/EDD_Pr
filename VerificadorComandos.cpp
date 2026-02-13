@@ -15,9 +15,7 @@ bool VerificadorComandos::procesar(const string& linea) {
 
     string cmd = tokens[0];
 
-    // =========================
-    // SALIR
-    // =========================
+   
     if (cmd == "salir") {
         if (tokens.size() != 1) {
             cout << "(Formato erroneo) El comando salir no recibe parametros." << endl;
@@ -26,9 +24,7 @@ bool VerificadorComandos::procesar(const string& linea) {
         return false;
     }
 
-    // =========================
-    // AYUDA
-    // =========================
+   
     else if (cmd == "ayuda") {
 
         if (validarAyuda(tokens)) {
@@ -101,9 +97,7 @@ bool VerificadorComandos::procesar(const string& linea) {
     return true;
 }
 
-// ============================================================
-// TOKENIZADOR
-// ============================================================
+
 
 vector<string> VerificadorComandos::tokenizar(const string& linea) const {
     vector<string> tokens;
@@ -117,9 +111,7 @@ vector<string> VerificadorComandos::tokenizar(const string& linea) const {
     return tokens;
 }
 
-// ============================================================
-// VALIDACIÃ“N DE NÃšMEROS
-// ============================================================
+
 
 bool VerificadorComandos::esNumero(const string& texto) const {
     stringstream ss(texto);
