@@ -119,9 +119,7 @@ bool VerificadorComandos::esNumero(const string& texto) const {
     return (ss >> numero) && ss.eof();
 }
 
-// ============================================================
-// VALIDACIONES
-// ============================================================
+
 
 bool VerificadorComandos::validarAyuda(const vector<string>& tokens) const {
 
@@ -180,7 +178,7 @@ bool VerificadorComandos::validarAgregarMovimiento(const vector<string>& tokens)
 bool VerificadorComandos::validarAgregarAnalisis(const vector<string>& tokens) const {
 
     if (tokens.size() < 3 || tokens.size() > 4) {
-        cout << "(Formato errÃ³neo) InformaciÃ³n del anÃ¡lisis incorrecta." << endl;
+        cout << "(Formato erroneo) InformaciÃ³n del analisis incorrecta." << endl;
         return false;
     }
 
@@ -201,7 +199,7 @@ bool VerificadorComandos::validarAgregarAnalisis(const vector<string>& tokens) c
 bool VerificadorComandos::validarAgregarElemento(const vector<string>& tokens) const {
 
     if (tokens.size() != 6) {
-        cout << "(Formato errÃ³neo) InformaciÃ³n del elemento incorrecta." << endl;
+        cout << "(Formato errÃ³neo) Informacion del elemento incorrecta." << endl;
         return false;
     }
 
