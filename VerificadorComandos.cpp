@@ -151,7 +151,7 @@ bool VerificadorComandos::validarCargarElementos(const vector<string>& tokens) c
 bool VerificadorComandos::validarAgregarMovimiento(const vector<string>& tokens) const {
 
     if (tokens.size() != 4) {
-        cout << "(Formato errÃ³neo) La informaciÃ³n del movimiento no corresponde a los datos esperados." << endl;
+        cout << "(Formato erroneo) La informaciÃ³n del movimiento no corresponde a los datos esperados." << endl;
         return false;
     }
 
@@ -199,7 +199,7 @@ bool VerificadorComandos::validarAgregarAnalisis(const vector<string>& tokens) c
 bool VerificadorComandos::validarAgregarElemento(const vector<string>& tokens) const {
 
     if (tokens.size() != 6) {
-        cout << "(Formato errÃ³neo) Informacion del elemento incorrecta." << endl;
+        cout << "(Formato erroneo) Informacion del elemento incorrecta." << endl;
         return false;
     }
 
