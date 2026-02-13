@@ -2,9 +2,7 @@
 
 using namespace std;
 
-// ============================
-// AYUDA GENERAL
-// ============================
+
 
 void mostrar_ayuda() {
 
