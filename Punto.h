@@ -7,9 +7,9 @@ struct Punto {
     double z;
 
     Punto crearPunto( double x, double y, double z );
-    double obtenerx(Punto p );
-    double obtenery(Punto p);
-    double obtenerz(Punto p);
+    double obtenerx();
+    double obtenery();
+    double obtenerz();
     double DistanciaEuclidiana(Punto p1, Punto p2);
     double DistanciaManhathan(Punto p1, Punto p2);
 
@@ -17,5 +17,4 @@ struct Punto {
 
 
 
-#endif //PUNTO_H
-
+#endif 
