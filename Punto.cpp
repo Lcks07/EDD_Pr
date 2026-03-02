@@ -1,3 +1,5 @@
+
+
 #include "Punto.h"
 #include <cmath>
 
@@ -9,19 +11,19 @@ Punto crearPunto( double x, double y, double z ) {
     return p;
 }
 
-double obtenerx(Punto p ) {
-    return p.x;
+double Punto::obtenerx() {
+    return x;
 }
 
-double obtenery(Punto p ) {
-    return p.y;
+double  Punto::obtenery( ) {
+    return y;
 }
 
-double obtenerz(Punto p ) {
-    return p.z;
+double Punto::obtenerz() {
+    return z;
 }
 
-double DistanciaEuclidiana(Punto p1, Punto p2) {
+double  Punto:: DistanciaEuclidiana(Punto p1, Punto p2) {
     double resultado=0;
     double t1=p2.x-p1.x;
     double t2=p2.y-p1.y;
@@ -33,7 +35,7 @@ double DistanciaEuclidiana(Punto p1, Punto p2) {
     return std::sqrt(resultado);
 }
 
-double DistanciaManhathan(Punto p1, Punto p2) {
+double  Punto:: DistanciaManhathan(Punto p1, Punto p2) {
     double resultado=0;
     double t1=p2.x-p1.x;
     double t2=p2.y-p1.y;
