@@ -3,7 +3,7 @@
 #define LISTA_COMANDOS_H
 #include "Comando.h"
 #include <list>
-#include "Comando.h"
+
 struct ListaComandos {
     std::list<Comando> comandos;
 
