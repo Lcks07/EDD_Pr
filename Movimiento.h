@@ -8,9 +8,9 @@ struct Movimiento {
     double magnitud;
 
     Movimiento CrearMovimiento(std::string tipo, std::string uniddad, double magnitud);
-    std::string ObetenerTipo();
-    std::string ObetenerUnidad();
-    double ObetenerMagnitud();
+    std::string ObtenerTipo();
+    std::string ObtenerUnidad();
+    double ObtenerMagnitud();
 
     double Magnitud_Metros(Movimiento m);
     double Magnitud_randianes(Movimiento m);
