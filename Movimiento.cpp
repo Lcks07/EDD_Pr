@@ -1,8 +1,3 @@
-#include "Movimiento.h"
-#include <string>
-
-#include "Punto.h"
-
 Movimiento Movimiento::CrearMovimiento(std::string tipo, std::string unidad, double magnitud) {
     Movimiento m;
     m.unidad = unidad;
@@ -11,15 +6,15 @@ Movimiento Movimiento::CrearMovimiento(std::string tipo, std::string unidad, dou
     return m;
 }
 
-std::string Movimiento::ObetenerTipo() {
+std::string Movimiento::ObtenerTipo() {
     return tipo;
 }
 
-std::string Movimiento::ObetenerUnidad() {
+std::string Movimiento::ObtenerUnidad() {
     return unidad;
 }
 
-double  Movimiento:: ObetenerMagnitud() {
+double  Movimiento:: ObtenerMagnitud() {
     return magnitud;
 }
 
