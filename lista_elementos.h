@@ -1,3 +1,6 @@
+#ifndef LISTA_ELEMENTOS_H
+#define LISTA_ELEMENTOS_H
+
 #include <list>
 #include "elemento_interes.h"
 
