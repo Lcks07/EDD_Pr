@@ -4,8 +4,8 @@
 #include <string>
 #include <vector>
 
-#include "ListaElementos.h"
-#include "ListaComandos.h"
+#include "lista_elementos.h"
+#include "lista_comandos.h"
 
 using namespace std;
 
@@ -13,9 +13,9 @@ class SistemaCuriosity
 {
 private:
 
-    // Estructuras del sistema
-    ListaElementos listaElementos;
-    ListaComandos listaComandos;
+    // Estructuras principales del sistema
+    ListaElementos elementos;
+    ListaComandos comandos;
 
 public:
 
@@ -24,15 +24,22 @@ public:
     // Procesador general de comandos
     void procesarComando(string linea);
 
-    // Comandos del componente 1
+    // Comandos del sistema
     void cargarComandos(string archivo);
     void cargarElementos(string archivo);
 
     void agregarMovimiento(string tipo, double magnitud, string unidad);
     void agregarAnalisis(string tipo, string objeto, string comentario);
-    void agregarElemento(string nombre, string tipo, double x, double y);
+
+    void agregarElemento(string tipo, double tam, string unidad, double x, double y);
 
     void guardar(string tipo, string archivo);
+
+    void simularComandos(double x, double y);
+
+    // NUEVOS COMANDOS
+    void ubicarElementos(double x, double y, double radio);
+    void enCuadrante(int cuadrante);
 };
 
 #endif
