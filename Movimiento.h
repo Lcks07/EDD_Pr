@@ -7,7 +7,7 @@ struct Movimiento {
     std::string unidad;
     double magnitud;
 
-    Movimiento CrearMovimiento(std::string tipo, std::string uniddad, double magnitud);
+    Movimiento CrearMovimiento(std::string tipo, std::string unidad, double magnitud);
     std::string ObtenerTipo();
     std::string ObtenerUnidad();
     double ObtenerMagnitud();
