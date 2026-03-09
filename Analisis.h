@@ -19,3 +19,7 @@ struct Analisis {
 
 
 #endif //ANALISIS_H
+
+
+
+#endif //ANALISIS_H
