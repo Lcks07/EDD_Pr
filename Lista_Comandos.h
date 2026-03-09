@@ -1,7 +1,6 @@
-
 #ifndef LISTA_COMANDOS_H
 #define LISTA_COMANDOS_H
-#include "Comando.h"
+#include "comando.h"
 #include <list>
 
 struct ListaComandos {
