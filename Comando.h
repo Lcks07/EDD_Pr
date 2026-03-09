@@ -3,8 +3,8 @@
 #define COMANDO_H
 
 #include <string>
-#include "Movimiento.h"
-#include "Analisis.h"
+#include "movimiento.h"
+#include "analisis.h"
 
 struct Comando {
 
@@ -21,5 +21,3 @@ struct Comando {
 };
 
 
-
-#endif //COMANDO_H
