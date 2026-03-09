@@ -1,3 +1,6 @@
+#include "movimiento.h"
+#include <cmath>
+
 Movimiento Movimiento::CrearMovimiento(std::string tipo, std::string unidad, double magnitud) {
     Movimiento m;
     m.unidad = unidad;
@@ -31,8 +34,9 @@ double Movimiento::Magnitud_Metros(Movimiento m) {
             }
             else {
                 return -1;
+        }
     }
-    }
+    return -1;
 }
 
 double Movimiento::Magnitud_randianes(Movimiento m) {
