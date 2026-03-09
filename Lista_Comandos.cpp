@@ -1,7 +1,7 @@
 
-#include "Lista_Comandos.h"
+#include "lista_comandos.h"
 #include <list>
-#include "Comando.h"
+#include "comando.h"
 ListaComandos ListaComandos::CrearListaComandos() {
     ListaComandos lc;
     return lc;
