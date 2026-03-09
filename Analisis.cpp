@@ -1,5 +1,5 @@
 
-#include "Analisis.h"
+#include "analisis.h"
 #include <string>
 Analisis Analisis::CrearAnalisis(std::string tipo, std::string objeto, std::string comentario) {
     Analisis a;
