@@ -1,5 +1,5 @@
-#include "Comando.h"
-#include<string>
+#include "comando.h"
+#include <string>
 
 Comando Comando:: CrearComandoMovimiento( Movimiento m) {
     Comando c;
