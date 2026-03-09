@@ -2,7 +2,6 @@
 #define ELEMENTO_INTERES_H
 
 #include <string>
-#include "punto.h"
 
 using namespace std;
 
@@ -13,19 +12,26 @@ private:
     string tipoElemento;
     double tamanio;
     string unidad;
-    Punto posicion;
+    double x;
+    double y;
+    double z;
 
 public:
 
     // Constructores
     ElementoInteres();
-    ElementoInteres(string tipo, double tam, string unidad, double x, double y);
+    ElementoInteres(string tipo, double tam, string unidad, double x, double y );
 
     // Getters
     string Get_TipoElemento();
     double Get_Tamanio();
     string Get_Unidad();
-    Punto Get_Posicion();
+    double Get_X();
+    double Get_Y();
+    double Get_Z();
+    double DistanciaEuclidiana(double x1,double y1,double z1,double x2,double y2,double z2);
+    bool EsValidoElemento(string tipo, double tam, string unidad, double x, double y, double z);
+    double DistanciaManhattan(double x1,double y1,double z1,double x2,double y2,double z2);
 
     // Operaciones
     double TamanioEnMetros();
